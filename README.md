@@ -16,6 +16,22 @@ class App
 end
 ```
 
+Configure `./bin/bootup` to use your app.
+
+```ruby
+require_relative '../lib/mack'
+require_relative '../app'
+
+Mack::Server.start(
+  :app => App.new,
+  :server => "webrick",
+  :host => "localhost",
+  :port => 8080
+)
+```
+
+Only accepts webrick for now, although you can add adapters within `Mack::Adapter`.
+
 Then run it with `bootup` (just like rackup):
 
 ```ruby
