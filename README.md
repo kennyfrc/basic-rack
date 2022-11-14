@@ -1,6 +1,6 @@
 # Mack
 
-Minimum viable rack clone that uses WEBrick as a server. Helpful for knowing the inner workings of rack.
+Minimum viable rack clone that uses WEBrick as a server. Helpful for knowing the inner workings of rack (only < 100 LOC).
 
 ## Usage
 
